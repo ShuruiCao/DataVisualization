@@ -1,7 +1,9 @@
 import adapter from '@sveltejs/adapter-static';
 
-import path from 'path';
-const absolutePath = (filepath) => path.resolve(__dirname, filepath);
+
+const absolutePath = (filepath) =>
+  new URL(filepath, import.meta.url).pathname;
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,7 +18,7 @@ const config = {
 		  }),
 		paths: {
 			base: '/DataVisualization',
-			assets: absolutePath('src/_app')
+			assets: absolutePath('./src/_app'),
 		},
 		
 	}
