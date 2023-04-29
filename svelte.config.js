@@ -9,7 +9,7 @@ const config = {
         adapter: adapter({fallback: 'index.html'}),
         paths: {
             base: '/DataVisualization',
-            assets: '/DataVisualization/src/_app'
+            assets: ''
         },
         
     }
