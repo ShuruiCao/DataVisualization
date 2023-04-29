@@ -13,7 +13,7 @@ const config = {
 		},
 		target: '#svelte',
 		appDir: '_app'
-		}
+		
 	}
 };
 
