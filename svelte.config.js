@@ -11,7 +11,6 @@ const config = {
 			base: '/DataVisualization',
 			assets: '/DataVisualization'
 		},
-		target: '#svelte',
 		appDir: '_app'
 		
 	}
