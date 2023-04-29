@@ -9,7 +9,10 @@ const config = {
 		adapter: adapter({fallback: 'index.html'}),
 		paths: {
 			base: '/DataVisualization',
-			assets: '/DataVisualization/_app'
+			assets: '/DataVisualization'
+		},
+		target: '#svelte',
+		appDir: '_app'
 		}
 	}
 };
